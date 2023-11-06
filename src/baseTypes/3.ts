@@ -1,4 +1,6 @@
-let some:unknown;
+/** @format */
+
+let some: string;
 some = 'Text';
 let str: string;
 str = some;
