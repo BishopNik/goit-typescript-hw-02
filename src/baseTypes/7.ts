@@ -16,5 +16,5 @@ enum Day {
 }
 
 const isWeekend = (day: Day): boolean => {
-	return day === Day.Sunday;
+	return day === Day.Sunday || day === Day.Saturday;
 };

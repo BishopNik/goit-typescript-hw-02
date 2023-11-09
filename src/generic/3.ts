@@ -5,7 +5,7 @@
  * @format
  */
 
-function merge<ObjA, ObjB>(objA: ObjA, objB: ObjB): ObjA & ObjB {
+function merge<A extends object, B extends object>(objA: A, objB: B): A & B {
 	return { ...objA, ...objB };
 }
 
