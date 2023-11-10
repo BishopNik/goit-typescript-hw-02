@@ -4,14 +4,27 @@
  * @format
  */
 
-interface T {
+// interface T {
+// 	title: string;
+// }
+// class Component<T> {
+// 	constructor(public props: T) {}
+// }
+
+// class Page extends Component<T> {
+// 	pageInfo() {
+// 		console.log(this.props.title);
+// 	}
+// }
+
+interface IProps {
 	title: string;
 }
 class Component<T> {
 	constructor(public props: T) {}
 }
 
-class Page extends Component<T> {
+class Page extends Component<IProps> {
 	pageInfo() {
 		console.log(this.props.title);
 	}
